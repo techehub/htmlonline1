@@ -1,0 +1,15 @@
+h1 { color:223344; 
+    font-size: 80
+    }
+
+p {color:blue; 
+    font-size: 25
+    }
+
+
+div {
+        background-color:black;
+        color: white;
+        margin: 20px;
+        padding: 20px;
+      }

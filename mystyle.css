@@ -1,0 +1,34 @@
+
+
+.ccc {
+  background-color: red;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+
+#aaa {
+  background-color:blue;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+div {
+  background-color:black;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+
+.main {
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+
+.other {
+  background-color:wheat;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
