@@ -1,0 +1,93 @@
+<html>
+
+<head>
+
+ 
+    </head>
+
+    <body>
+
+        <input type="text" value="" id="num" onkeypress="hai()"> 
+ 
+        <div id = "demo" ></div>
+    
+        <script>
+
+
+            function hai(){
+
+                alert("Hai")
+
+            }
+ 
+            function test () {  
+             var x=10
+             var y=20
+             if (x>100){
+              document.write ("X is grater than  100 ")
+             }
+             else if (x > 50) {
+              document.write (" X is grater than  50 ")
+             }
+             else {
+              document.write (" X is grater than  50 ")
+            }
+          
+            }
+          
+            function  test2 ()
+            {
+              var day =7
+              switch ( day ){
+                  case 1: 
+                       document.write ("SUN")  
+                       break         
+                  case 2 :
+                       document.write ("MON")  
+                       break      
+                  case 3: 
+                       document.write ("TUE")  
+                       break         
+                  case 4 :
+                       document.write ("WED")  
+                       break      
+                  case 5 :
+                       document.write ("THU")  
+                       break      
+                  case 6: 
+                       document.write ("FRI")  
+                       break         
+                  case 7 :
+                       document.write ("SAT")  
+                       break      
+                  default :
+                      document.write ("Invalid !!!")  
+              }
+          
+            }
+          
+            function test3 (){
+              var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+              var text = "";
+              var i;
+              for (i = 0; i < cars.length; i++) {
+                  text += cars[i] + "<br>";
+                  }
+              document.getElementById("demo").innerHTML = text;
+          
+            }
+           
+
+            var cars = ["BMW", "Volvo", "Saab", "Ford"];   
+            var text = "";
+            for (var i = 0;cars[i];i++) {
+                text += cars[i] + "<br>";
+            
+            }
+              </script>
+
+
+
+    </body>
+
+</html>

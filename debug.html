@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Class Method</h2>
+
+<p>Pass a parameter into the "present()" method.</p>
+
+<p id="demo"></p>
+
+<script>
+
+class Car {
+  constructor(brand,engine) {
+    this.brand = brand;
+    this.engine = engine;
+  }
+  present() {
+    return 'I have a ' + this.brand + 'with ' + this.engine +' engine';
+  }
+}
+
+class Studet {
+
+    constructor(id, name, branch){
+
+    }
+
+}
+
+
+class ClassroomStudent extends Student{
+
+constructor(id, name, branch, basic , classroomFee , GST  ){
+
+}
+
+}
+
+class OnlineStudent extends Student{
+
+constructor(id, name, branch ){
+
+}
+
+}
+
+class Model extends Car {
+  constructor(brand,engine, mod, year) {
+    super(brand, engine);
+    this.model = mod;
+    this.year= year
+  }
+  
+  show() {
+    return this.present() + ', it is a ' + this.model + 'with year ' + this.year;
+  }
+}
+
+mycar = new Model("Ford", "Petrol", "Mustang", 2015);
+
+document.getElementById("demo").innerHTML = mycar.show();
+
+</script>
+
+</body>
+</html>
