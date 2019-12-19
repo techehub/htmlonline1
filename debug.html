@@ -10,56 +10,53 @@
 
 <script>
 
-class Car {
-  constructor(brand,engine) {
-    this.brand = brand;
-    this.engine = engine;
-  }
-  present() {
-    return 'I have a ' + this.brand + 'with ' + this.engine +' engine';
-  }
-}
 
-class Studet {
+add= (function  (){
 
-    constructor(id, name, branch){
+        var counter =0
 
-    }
+         return function  (){
+             
+             counter = counter +1 
 
-}
+        }
+
+       
+
+}) ()
+
+debugger
+
+add ()
+add ()
+add ()
 
 
-class ClassroomStudent extends Student{
-
-constructor(id, name, branch, basic , classroomFee , GST  ){
-
-}
-
-}
-
-class OnlineStudent extends Student{
-
-constructor(id, name, branch ){
-
-}
-
-}
-
-class Model extends Car {
-  constructor(brand,engine, mod, year) {
-    super(brand, engine);
-    this.model = mod;
-    this.year= year
-  }
+function Person(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyecolor;
   
-  show() {
-    return this.present() + ', it is a ' + this.model + 'with year ' + this.year;
-  }
 }
 
-mycar = new Model("Ford", "Petrol", "Mustang", 2015);
 
-document.getElementById("demo").innerHTML = mycar.show();
+Person.prototype.nationality = "English";
+Person.prototype.isMatured = function (){
+    if (this.age > 18){
+            return true
+    } 
+    else {
+        return false
+    }
+}
+var father = new Person ("aaaa", "bbbb", 22, "aa") 
+father.nationality="India"
+
+
+alert (father.isMatured())
+
+
 
 </script>
 

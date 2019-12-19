@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function isEmail (txt){
+	//TODO
+	return false
+}
+
+function validateForm() {
+alert("ffff")
+  var x = document.forms["myForm"]["fname"].value;
+  var y = document.forms["myForm"]["email"].value;
+ 
+var status =true
+document.getElementById("nameErr").innerHTML="";
+document.getElementById("emailErr").innerHTML="";
+    status = false;
+  if (x == "") {
+    document.getElementById("nameErr").innerHTML="Enter name";
+    status = false;
+  }
+  if (!isEmail(y) ){
+  	 document.getElementById("emailErr").innerHTML="incorrect email";
+    status = false;
+  }
+  
+  return status
+  
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname"> <div style="color:red" id="nameErr"></div> <br>
+  email: <input type="text" name="email"><div style="color:red"  id="emailErr"></div> 
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
